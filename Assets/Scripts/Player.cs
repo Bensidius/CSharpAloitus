@@ -58,29 +58,29 @@ public class Player : MonoBehaviour
             GetComponent<Renderer>().material.color = Color.yellow;
         }
 
-    }// update-funktio päättyy tähän
+    }// update-funktio pï¿½ï¿½ttyy tï¿½hï¿½n
 
-    //keräillään karkkeja
+    //kerï¿½illï¿½ï¿½n karkkeja
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Collectible")
         {
-            // Let´s collect things
+            // Letï¿½s collect things
             Destroy(collision.gameObject);
         }
-        // Let´s get destroyed by enemy
+        // Letï¿½s get destroyed by enemy
         if (collision.gameObject.tag == "Enemy")
         {
             //Destroy(gameObject);
 
-            // Let´s load the GameOver -scene
+            // Letï¿½s load the GameOver -scene
 
             SceneManager.LoadScene("GameOver");
 
         }
     }
 
-} // Player päättyy tähän
+} // Player pï¿½ï¿½ttyy tï¿½hï¿½n
 
 
 
